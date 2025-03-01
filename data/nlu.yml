@@ -1,0 +1,120 @@
+version: "3.1"
+
+nlu:
+- regex: num_pedido
+  examples: |
+    - \d{5}
+
+- lookup: sabor
+  examples: |
+    - calabresa
+    - marguerita
+    - frango com Catupiry
+    - portuguesa
+    - quatro Queijos
+    - pepperoni
+    - napolitana
+    - baiana
+    - atum
+    - palmito
+    - milho com Bacon
+    - rhocolate
+    - romeu e Julieta
+    - brócolis com Alho
+    - rúcula com Tomate Seco
+    - mexicana
+    - caprese
+    - strogonoff
+    - carne de Sol com Catupiry
+    - banana com Canela
+
+
+- intent: saudacao
+  examples: |
+    - hey
+    - olá
+    - oi
+    - boa tarde
+    - bom dia
+    - boa noite
+    - opa
+    - fala meu chapa
+    - eae
+    - opa, tudo bem?
+    - E aí, beleza?
+    - Eae chefe
+    - oi, como vai?
+    - Salve, meu consagrado
+    - bom dia, tudo bem?
+    - eae blz?
+
+- intent: descricao_pizza
+  examples: |
+    - Quero uma pizza de [calabreza](sabor)
+    - Gostaria de pedir uma pizza de atum
+    - Manda uma pizza de frango com catupiry
+    - Me vê uma pizza de marguerita
+    - Vou querer uma pizza de portuguesa
+    - Eu quero uma pizza de peperoni
+    - Eu queria uma pizza de milho
+    - Uma pizza de atum e uma de mussarela
+    - Meia calabresa e meia atum
+    - Pode fazer uma pizza de quatro queijos
+    - Por favor, me traga duas pizzas de chocolate
+    - Posso pedir uma pizza vegetariana?
+    - Três pizzas, uma de 3 queijos, uma de strogonoff, e uma meia mussarela e meia portuguesa
+    - Tô afim de uma pizza baiana
+    - Manda uma pizza de calabreza pra mim
+    - Me vê uma pizza aí, metade atum, metae de palmito
+
+- intent: status
+  examples: |
+    - Qual o status do meu pedido?
+    - Meu pedido ainda não chegou!
+    - Cadê a minha pizza?
+    - Onde está o meu pedido?
+    - Ainda não recebi a minha pizza
+    - Quero saber pq o meu pedido ainda não chegou
+    - Pode me dizer, por favor, onde está a minha pizza?
+    - Quando vai chegar a minha pizza?
+    - Pq minha pizza ainda não chegou?
+    - Oq aconteceu com o meu pedido. Não chegou aqui.
+    - Já faz tempo que eu fiz meu pedido, onde está minha pizza?
+    - pq minha pizza n está aq?
+    - Minha pizza deveria ter chegado, o que houve?
+    - Meu pedido está demorando demais, cade ele?
+    - Meu pedido está com a entrega atrasada. Oq ocorreu?
+
+- intent: id_pedido
+  examples: |
+    - O número do meu pedido é o [12345](num_pedido)
+    - Meu pedido é o 65478
+    - O número é 03698
+    - 78963
+    - claro, o pedido é o 98765
+    - n: 32569
+    - pedido nº 98537
+    - num do pedido é 96325
+    - sim, é o 98563
+    - é o 65896
+    - pedido 94762
+    - O pedido foi o 98647
+    - Aqui está o nº do pedido: 32147
+    - Foi registrado no nº 36589
+
+- intent: agradecimento
+  examples: |
+    - obrigado
+    - obg
+    - valeu
+    - vlw
+    - Agradeço a sua ajuda
+    - muito obrigado
+    - tmj
+    - tamo junto
+    - satisfação
+    - você é fera
+    - valeu pela ajuda
+    - agradeço a atenção
+    - É nois
+
