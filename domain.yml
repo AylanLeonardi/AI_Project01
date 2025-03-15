@@ -2,14 +2,20 @@ version: "3.1"
 
 intents:
   - saudacao
-  - descricao_pizza
+  - solicitacao_jogo
   - status
-  - id_pedido
-  - agradecimento
+  - especificacao_genero
+  - devolucao
+  - avaliacao
+  - compra
+  - aluga
+  - troca
+  - despedida
 
 entities:
-  - sabor
-  - num_pedido
+  - nome_jogo
+  - genero_jogo
+  - preco
 
 slots: #To save the identified entities somewhere
   pedido_pizza:
@@ -29,20 +35,32 @@ responses:
   utter_saudacao:
   - text: "Olá e seja bem vindo! O que você gostaria de pedir hoje?"
   - text: "Oi, posso anotar o seu pedido?"
+  - text: ""
 
-  utter_descricao_pizza:
+  utter_solicitacao_jogo:
   - text: "Feito, seu pedido de pizza de {pedido_pizza} foi devidamente registrado no código XYZ e logo será enviado para você"
+  - text: ""
+  - text: ""
 
   utter_status:
   - text: "Voce poderia me informar o código do seu pedido?"
+  - text: ""
+  - text: ""
 
-  utter_id_pedido:
+  utter_especificacao_genero:
   - text: "Seu pedido n°{num_pedido_cliente} está a caminho"
+  - text: ""
+  - text: ""
 
-  utter_agradecimento:
+  utter_despedida:
   - text: "Obrigado pela cooperação e conte sempre conosco"
   - text: "Obrigado pela vossa atenção!"
+  - text: ""
 
+  utter_devolucao:
+  - text:
+  - text:
+  - text:
 
 session_config:
   session_expiration_time: 60

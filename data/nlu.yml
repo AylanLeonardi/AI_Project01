@@ -6,7 +6,7 @@ nlu:
     - \d{5}
 
 - lookup: sabor
-  examples: |
+  examples:
     - calabresa
     - marguerita
     - frango com Catupiry
