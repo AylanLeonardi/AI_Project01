@@ -1,17 +1,14 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - saudacao
-  - descricao_pizza
-  - status
-  - id_pedido
-  - agradecimento
-
+- agradecimento
+- descricao_pizza
+- id_pedido
+- saudacao
+- status
 entities:
-  - sabor
-  - num_pedido
-
-slots: #To save the identified entities somewhere
+- sabor
+- num_pedido
+slots:
   pedido_pizza:
     type: text
     influence_conversation: false
@@ -24,26 +21,21 @@ slots: #To save the identified entities somewhere
     mappings:
     - type: from_entity
       entity: num_pedido
-
 responses:
   utter_saudacao:
-  - text: "Olá e seja bem vindo! O que você gostaria de pedir hoje?"
-  - text: "Oi, posso anotar o seu pedido?"
-
+  - text: Olá e seja bem vindo! O que você gostaria de pedir hoje?
+  - text: Oi, posso anotar o seu pedido?
   utter_descricao_pizza:
-  - text: "Feito, seu pedido de pizza de {pedido_pizza} foi devidamente registrado no código XYZ e logo será enviado para você"
-
+  - text: Feito, seu pedido de pizza de {pedido_pizza} foi devidamente registrado no código XYZ e logo será enviado para você
   utter_status:
-  - text: "Voce poderia me informar o código do seu pedido?"
-
+  - text: Voce poderia me informar o código do seu pedido?
   utter_id_pedido:
-  - text: "Seu pedido n°{num_pedido_cliente} está a caminho"
-
+  - text: Seu pedido n°{num_pedido_cliente} está a caminho
   utter_agradecimento:
-  - text: "Obrigado pela cooperação e conte sempre conosco"
-  - text: "Obrigado pela vossa atenção!"
-
-
+  - text: Obrigado pela cooperação e conte sempre conosco
+  - text: Obrigado pela vossa atenção!
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+actions:
+- utter_saudacao

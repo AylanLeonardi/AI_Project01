@@ -16,3 +16,13 @@ stories:
   - intent: id_pedido
   - action: utter_id_pedido
 
+
+- story: interactive_story_1
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: descricao_pizza
+    entities:
+    - sabor: atum
+  - slot_was_set:
+    - pedido_pizza: atum
