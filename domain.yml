@@ -1,41 +1,105 @@
 version: '3.1'
+
 intents:
-- agradecimento
-- descricao_pizza
-- id_pedido
 - saudacao
+- descriccao_jogo
+- comprar
+- alugar
+- enderecamento
 - status
+- devolucao
+- motivo
+- reembolso
+- troca
+- despedida
+
 entities:
-- sabor
-- num_pedido
+- codigo
+- nome_jogo
+- endereco
+
 slots:
-  pedido_pizza:
+  codigo_slot:
     type: text
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: sabor
-  num_pedido_cliente:
+      entity: codigo
+  nome_jogo_slot:
     type: text
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: num_pedido
+      entity: nome_jogo
+  endereco_slot:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: endereco
+
 responses:
+
   utter_saudacao:
-  - text: Olá e seja bem vindo! O que você gostaria de pedir hoje?
-  - text: Oi, posso anotar o seu pedido?
-  utter_descricao_pizza:
-  - text: Feito, seu pedido de pizza de {pedido_pizza} foi devidamente registrado no código XYZ e logo será enviado para você
+  - text: Olá! O que vai querer hoje? 🎮
+  - text: E aí, gamer! Como posso te ajudar hoje na nossa loja? 🕹️
+  - text: Bem-vindo(a) à nossa loja de games! Fique à vontade para explorar as novidades. 👾
+
+  utter_descricao_jogos:
+  - text: Excelente escolha! [nome_jogo_slot] é incrível — agora só precisamos do seu endereço para seguir com a entrega. 🚀📦
+  - text: Ótima pedida! Vamos finalizar sua compra — nos envie o endereço pra garantir essa aventura. 🛒🏠
+  - text: Show! [nome_jogo_slot] já está quase com voce. Mande o endereço e a entrega será épica! 🎯🚚
+
+  utter_comprar:
+  - text: Que bom saber que vai garantir um jogo! Me diz qual jogo tem em mente. 🎮🧐
+  - text: Show! A gente tem várias opções incríveis — quel deseja? 👾📚
+  - text: Mandou bem! Me fala o jogo que você gosta e vamos achar pra você. 🎯✨
+
+  utter_alugar:
+  - text: Aluguel é uma ótima opção! Quer me contar o game que tá procurando? 🎮📦
+  - text: Legal! Temos vários títulos disponíveis pra aluguel — qual o nome do game que deseja? 🕹️📋
+  - text: Show de bola! Me fala o jogo que você quer alugar e eu arrumo pra você. 🎯📚
+
+  utter_enderecamento:
+  - text: Endereço recebido com sucesso! Já estamos enviando alguém até aí. 🚚✅
+  - text: Tudo certo com o endereço! Um membro da equipe já está a caminho. 📦🕹️
+  - text: Confirmamos o endereço! Agora é só aguardar que logo alguém chegará aí. 🏠🎮
+
+  utter_cobranca:
+  - text: Você pode me enviar o código de rastreio, por favor?
+  - text: Consegue me passar o código da entrega para eu verificar?
+  - text: Me envia o número do rastreio quando puder, assim consigo te ajudar melhor.
+  
   utter_status:
-  - text: Voce poderia me informar o código do seu pedido?
-  utter_id_pedido:
-  - text: Seu pedido n°{num_pedido_cliente} está a caminho
-  utter_agradecimento:
-  - text: Obrigado pela cooperação e conte sempre conosco
-  - text: Obrigado pela vossa atenção!
+  - text: Nosso agente já está a caminho! Logo logo chega aí. 🚚🎮
+  - text: Tá quase lá! O responsavel já está na area de entrega. ⏳📦
+  - text: Acabei de verificar e ele já está próximo do destino. Fique de olho! 👀✅
+
+  utter_devolucao:
+  - text: Poderia nos informar o motivo da devolução? Assim conseguimos te ajudar melhor. 🔄
+  - text: Tudo certo! Só precisamos saber o motivo da devolução para seguir com o processo. 📋
+  - text: Pode nos dizer por que decidiu devolver o jogo? Queremos garantir a melhor experiência possível. 🎮💬
+
+  utter_motivo:
+  - text: Você prefere receber um reembolso ou fazer a troca por outro jogo? 🎮💸
+  - text: Podemos seguir com o reembolso ou você gostaria de escolher outro jogo no lugar? 🔁📦
+  - text: Vai querer trocar o jogo ou prefere o valor de volta? É só nos avisar! ✅
+
+  utter_reembolso:
+  - text: Para seguir com o reembolso, precisamos do seu endereço para agendar a coleta do jogo. 🏠📦
+  - text: Você pode nos enviar o endereço para que possamos recolher o jogo antes do reembolso? 🚚💸
+  - text: Só precisamos do endereço de coleta para continuar com o processo de reembolso. Pode nos informar? ✅🎮
+
+  utter_troca:
+  - text: Pode nos informar por qual jogo você gostaria de fazer a troca? 🎮🔁
+  - text: Já sabe qual título quer receber no lugar? É só nos dizer! 📦🎯
+  - text: Quer trocar por algum jogo específico? Me conta qual você tem em mente. 🕹️✅
+
+  utter_despedida:
+  - text: Obrigado por escolher nossa loja! Até a próxima e boas jogatinas! 🎮👋
+  - text: Foi um prazer te atender! Qualquer coisa, estamos por aqui. Até mais! 🕹️😊
+  - text: Valeu pela visita! Esperamos te ver de novo em breve. Bom jogo! 🚀🎉
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-actions:
-- utter_saudacao

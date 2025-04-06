@@ -2,27 +2,44 @@ version: "3.1"
 
 stories:
 
-- story: Pedido de Pizza
+- story: Compra de Jogo
   steps:
-  - intent: saudacao
-  - action: utter_saudacao
-  - intent: descricao_pizza
-  - action: utter_descricao_pizza
+  - intent: comprar
+  - action: utter_comprar
+  - intent: descricao_jogo
+  - action: utter_descricao_jogo
+  - intent: enderecamento
+  - action: utter_enderecamento
 
-- story: Status do Pedido
+- story: Alugar Jogo
   steps:
-  - intent: status
-  - action: utter_status
-  - intent: id_pedido
-  - action: utter_id_pedido
+  - intent: alugar
+  - action: utter_alugar
+  - intent: descricao_jogo
+  - action: utter_descricao_jogo
+  - intent: enderecamento
+  - action: utter_enderecamento
 
-
-- story: interactive_story_1
+- story: Reembolsamento do Jogo
   steps:
-  - intent: saudacao
-  - action: utter_saudacao
-  - intent: descricao_pizza
-    entities:
-    - sabor: atum
-  - slot_was_set:
-    - pedido_pizza: atum
+  - intent: devolucao
+  - action: utter_devolucao
+  - intent: motivo
+  - action: utter_motivo
+  - intent: reembolso
+  - action: utter_reembolso
+  - intent: enderecamento
+  - action: utter_enderecamento
+
+- story: Troca do Jogo
+  steps:
+  - intent: devolucao
+  - action: utter_devolucao
+  - intent: motivo
+  - action: utter_motivo
+  - intent: troca
+  - action: utter_troca
+  - intent: descricao_jogo
+  - action: utter_descricao_jogo
+  - intent: enderecamento
+  - action: utter_enderecamento

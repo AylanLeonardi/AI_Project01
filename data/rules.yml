@@ -2,8 +2,16 @@ version: "3.1"
 
 rules:
 
-- rule: Agradecimento
+- rule: Despedida
   steps:
-  - intent: agradecimento
-  - action: utter_agradecimento
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Questionamento
+  steps:
+  - intent: devolucao
+  - action: utter_devolucao
+  - intent: motivo
+  - action: utter_motivo
+  
 

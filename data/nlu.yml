@@ -1,32 +1,60 @@
 version: "3.1"
 
 nlu:
-- regex: num_pedido
+- regex: codigo
   examples: |
-    - \d{5}
+    - \d{6}
 
-- lookup: sabor
-  examples:
-    - calabresa
-    - marguerita
-    - frango com Catupiry
-    - portuguesa
-    - quatro Queijos
-    - pepperoni
-    - napolitana
-    - baiana
-    - atum
-    - palmito
-    - milho com Bacon
-    - rhocolate
-    - romeu e Julieta
-    - brócolis com Alho
-    - rúcula com Tomate Seco
-    - mexicana
-    - caprese
-    - strogonoff
-    - carne de Sol com Catupiry
-    - banana com Canela
+- lookup: nome_jogo
+  examples: |
+    - Breath of the Wild
+    - Red Dead Redemption 2
+    - Modern Warfare II
+    - Counter-Strike 2 (CS2)
+    - DOOM Eternal
+    - Overwatch 2
+    - Rainbow Six Siege
+    - Assassin’s Creed Valhalla
+    - God of War Ragnarok
+    - Ghost of Tsushima
+    - The Witcher 3
+    - Elden Ring
+    - Cyberpunk 2077
+    - Final Fantasy VII Remake
+    - Persona 5 Royal
+    - World of Warcraft
+    - Final Fantasy XIV
+    - Black Desert Online
+    - Lost Ark
+    - Elder Scrolls Online
+    - Forza Horizon 5
+    - Gran Turismo 7
+    - F1 23
+    - Need for Speed Unbound
+    - Mario Kart 8 Deluxe
+    - EA Sports FC 24
+    - NBA 2K24
+    - eFootball 2024
+    - Madden NFL 24
+    - Tony Hawk's Pro Skater 1+2
+    - Minecraft
+    - GTA V
+    - Terraria
+    - ARK Survival Evolved
+    - Valheim
+    - Resident Evil Village
+    - Dead Space Remake
+    - Phasmophobia
+    - Outlast
+    - Age of Empires IV
+    - XCOM 2
+    - Warhammer III
+    - StarCraft II
+    - Hades
+    - Stardew Valley
+    - Celeste
+    - Hollow Knight
+    - Undertale
 
 
 - intent: saudacao
@@ -46,75 +74,201 @@ nlu:
     - oi, como vai?
     - Salve, meu consagrado
     - bom dia, tudo bem?
-    - eae blz?
 
-- intent: descricao_pizza
+- intent: descricao_jogo
   examples: |
-    - Quero uma pizza de [calabreza](sabor)
-    - Gostaria de pedir uma pizza de atum
-    - Manda uma pizza de frango com catupiry
-    - Me vê uma pizza de marguerita
-    - Vou querer uma pizza de portuguesa
-    - Eu quero uma pizza de peperoni
-    - Eu queria uma pizza de milho
-    - Uma pizza de atum e uma de mussarela
-    - Meia calabresa e meia atum
-    - Pode fazer uma pizza de quatro queijos
-    - Por favor, me traga duas pizzas de chocolate
-    - Posso pedir uma pizza vegetariana?
-    - Três pizzas, uma de 3 queijos, uma de strogonoff, e uma meia mussarela e meia portuguesa
-    - Tô afim de uma pizza baiana
-    - Manda uma pizza de calabreza pra mim
-    - Me vê uma pizza aí, metade atum, metae de palmito
+    - Quero [Elden Ring](nome_jogo)
+    - Me vê Cyberpunk 2077
+    - Quero The Witcher 3
+    - Desejo Minecraft
+    - Quero GTA V
+    - Estou interessado em Hollow Knight
+    - Quero Stardew Valley
+    - Desejo Red Dead Redemption 2
+    - Quero Overwatch 2
+    - Me veja DOOM Eternal
+    - Quero Valheim
+    - Estou pensando em Final Fantasy VII Remake
+    - Quero Counter-Strike 2 (CS2)
+    - Desejo Persona 5 Royal
+    - Quero God of War Ragnarok
+
+- intent: comprar
+  examples: |
+    - Quero adquirir um jogo
+    - Gostaria de comprar um jogo
+    - Quero adquirir um novo game
+    - Posso obter um jogo?
+    - Desejo comprar um game
+    - Me envie um game, por favor
+    - Estou interessado em adquirir um jogo
+    - Quero comprar algo para me divertir
+    - Gostaria de obter um game
+    - Desejo obter um jogo para mim
+    - Posso solicitar um jogo?
+    - Quero adquirir um videogame
+    - Me veja um game, por favor
+    - Estou pensando em comprar um jogo
+    - Quero adquirir algo divertido para jogar
+
+- intent: alugar
+  examples: |
+    - Quero locar um jogo
+    - Posso pegar um game por alguns dias?
+    - Gostaria de arrendar algo para jogar
+    - Quero emprestar um jogo
+    - É possível locar um videogame?
+    - Quero alugar um game por um tempo
+    - Estou interessado em pegar um game
+    - Posso arrendar um jogo para experimentar?
+    - Gostaria de pegar algo divertido para jogar
+    - Quero locar um jogo para o fim de semana
+    - Preciso pegar um game por alguns dias
+    - Quero arrendar um jogo por um mês
+    - Posso pegar um jogo para testar?
+    - Gostaria de locar um jogo para mim
+    - Quero emprestar algo para me divertir
+
+- intent: enderecamento
+  examples: |
+    - O local é [Rua das Flores, 123](endereco)
+    - Estou localizado na [Avenida Paulista, 1000](endereco)
+    - Pode enviar para [Rua do Sol, 45](endereco)
+    - Meu local é [Praça da Liberdade, 10](endereco)
+    - Envie para o endereço [Rua das Palmeiras, 678](endereco)
+    - O endereço é [Avenida Brasil, 200](endereco)
+    - Estou em [Rua do Comércio, 89](endereco)
+    - O pedido deve ser entregue em [Rua das Acácias, 321](endereco)
+    - Entregue no endereço [Avenida Central, 456](endereco)
+    - O local de entrega é [Rua Nova, 77](endereco)
+    - Pode mandar para [Rua das Orquídeas, 12](endereco)
+    - Estou na localização [Avenida Atlântica, 999](endereco)
+    - O destino é [Rua do Porto, 50](endereco)
+    - A entrega deve ser feita no local [Praça do Mercado, 5](endereco)
+    - O endereço de envio é [Rua das Laranjeiras, 88](endereco)
+
+- intent: cobranca
+  examples: |
+    - Oi, queria saber como está a entrega do meu jogo.
+    - Já saiu pra entrega ou ainda tá parado aí?
+    - E aí, vai chegar quando isso?
+    - Meu jogo já foi enviado ou tão enrolando?
+    - Ainda não recebi nada, o que tá acontecendo?
+    - Qual é o status da entrega? Já passou da hora.
+    - Tá demorando demais, alguém pode resolver isso?
+    - Onde diabos tá meu pedido?
+    - Vai chegar algum dia ou não?
+    - Isso já devia ter chegado, né?
+    - Meu pedido sumiu ou vocês esqueceram?
+    - Já deu o prazo e nada ainda, isso é normal?
+    - Consegue me dizer onde está meu pedido?
+    - Até agora nada da entrega, aconteceu algo?
+    - Quero uma resposta. Quando vai chegar esse jogo?
 
 - intent: status
   examples: |
-    - Qual o status do meu pedido?
-    - Meu pedido ainda não chegou!
-    - Cadê a minha pizza?
-    - Onde está o meu pedido?
-    - Ainda não recebi a minha pizza
-    - Quero saber pq o meu pedido ainda não chegou
-    - Pode me dizer, por favor, onde está a minha pizza?
-    - Quando vai chegar a minha pizza?
-    - Pq minha pizza ainda não chegou?
-    - Oq aconteceu com o meu pedido. Não chegou aqui.
-    - Já faz tempo que eu fiz meu pedido, onde está minha pizza?
-    - pq minha pizza n está aq?
-    - Minha pizza deveria ter chegado, o que houve?
-    - Meu pedido está demorando demais, cade ele?
-    - Meu pedido está com a entrega atrasada. Oq ocorreu?
+    - Meu código de pedido é [123456](codigo)
+    - O número do meu pedido é 654321
+    - Pode consultar o status do pedido 987654?
+    - Quero saber a situação do pedido com o código 456789
+    - O identificador do meu pedido é 112233
+    - Meu pedido está registrado com o número 334455
+    - Verifique o status do pedido com o número 778899, por favor
+    - O identificador do meu pedido é 998877, pode verificar?
+    - Estou aguardando o pedido com o número 223344
+    - A situação do pedido 667788 está disponível?
+    - Meu pedido foi registrado com o número 445566
+    - Pode me informar sobre o pedido 556677?
+    - Quero saber a situação do pedido com o número 889900
+    - O número do meu pedido é 101112, qual a situação?
+    - Consulte o status do pedido 121314, por gentileza
 
-- intent: id_pedido
+- intent: devolucao
   examples: |
-    - O número do meu pedido é o [12345](num_pedido)
-    - Meu pedido é o 65478
-    - O número é 03698
-    - 78963
-    - claro, o pedido é o 98765
-    - n: 32569
-    - pedido nº 98537
-    - num do pedido é 96325
-    - sim, é o 98563
-    - é o 65896
-    - pedido 94762
-    - O pedido foi o 98647
-    - Aqui está o nº do pedido: 32147
-    - Foi registrado no nº 36589
+    - Quero retornar um jogo
+    - Preciso retornar o game que comprei
+    - Como faço para devolver um jogo?
+    - Desejo realizar a devolução de um game
+    - Posso retornar o jogo que recebi?
+    - Quero devolver porque não gostei do game
+    - O jogo veio com defeito, quero retornar
+    - Preciso retornar o game porque está com problema
+    - Quero devolver e trocar o game por outro
+    - Como funciona o retorno de um jogo?
+    - Quero retornar o game e receber meu dinheiro de volta
+    - Desejo devolver o jogo que chegou ontem
+    - Posso retornar o game na loja?
+    - Quero retornar o game porque não atendeu minhas expectativas
+    - Preciso devolver o jogo o mais rápido possível
 
-- intent: agradecimento
+- intent: motivo
   examples: |
-    - obrigado
-    - obg
-    - valeu
-    - vlw
-    - Agradeço a sua ajuda
-    - muito obrigado
-    - tmj
-    - tamo junto
-    - satisfação
-    - você é fera
-    - valeu pela ajuda
-    - agradeço a atenção
-    - É nois
+    - Quero retornar porque o jogo veio com defeito
+    - O jogo não funciona, quero retornar
+    - Recebi o jogo errado, preciso devolver
+    - O jogo está danificado, quero devolver
+    - Não gostei do jogo, quero retornar
+    - O jogo não atende minhas expectativas
+    - O produto veio incompleto, quero retornar
+    - O jogo está com problemas técnicos
+    - Não era o que eu esperava, quero retornar
+    - O jogo está quebrado, preciso retornar
+    - Recebi um jogo diferente do que pedi
+    - O jogo está com defeito na mídia
+    - Não consigo jogar, o jogo está com problema
+    - O produto veio com a embalagem danificada
+    - Quero retornar porque o jogo não é compatível com meu console
 
+- intent: reembolso
+  examples: |
+    - Quero solicitar um reembolso
+    - Preciso de um reembolso
+    - Como faço para pedir um reembolso?
+    - Desejo receber meu dinheiro de volta
+    - Posso solicitar um reembolso?
+    - Quero saber como pedir um reembolso
+    - Preciso que meu dinheiro seja devolvido
+    - Quero pedir um reembolso
+    - Como funciona o processo de reembolso?
+    - Desejo solicitar a devolução do valor pago
+    - Quero meu dinheiro de volta
+    - Posso pedir um reembolso agora?
+    - Preciso de informações sobre como solicitar um reembolso
+    - Quero entender como funciona o reembolso
+    - Estou interessado em pedir um reembolso
+
+- intent: troca
+  examples: |
+    - Quero substituir o jogo por outro
+    - Posso trocar este jogo por um diferente?
+    - Desejo realizar a substituição do jogo
+    - Quero trocar o jogo que adquiri
+    - Como faço para substituir o jogo por outro?
+    - Preciso substituir o jogo por um novo
+    - Quero trocar o jogo que recebi
+    - Posso substituir o jogo por outro modelo?
+    - Desejo trocar o jogo por algo diferente
+    - Quero realizar a substituição do jogo
+    - Preciso trocar o jogo que está comigo
+    - Quero saber como substituir o jogo por outro
+    - Posso solicitar a substituição do jogo?
+    - Quero trocar o jogo por algo melhor
+    - Desejo substituir o jogo por outro disponível
+
+- intent: despedida
+  examples: |
+    - Tchau
+    - Até mais
+    - Até logo
+    - Até breve
+    - Falou
+    - Valeu, até a próxima
+    - Até a próxima
+    - Fui
+    - Adeus
+    - Até mais tarde
+    - Nos vemos em breve
+    - Até amanhã
+    - Foi um prazer, até logo
+    - Obrigado, até mais
+    - Até qualquer hora
