@@ -61,8 +61,8 @@ responses:
   - text: Show de bola! Me fala o jogo que você quer alugar e eu arrumo pra você. 🎯📚
 
   utter_enderecamento:
-  - text: Endereço recebido com sucesso! Já estamos enviando alguém até aí. 🚚✅
-  - text: Tudo certo com o endereço! Um membro da equipe já está a caminho. 📦🕹️
+  - text: Endereço recebido com sucesso! Já estamos enviando alguém até aí com o pacote [codigo_slot]. 🚚✅
+  - text: Tudo certo com o endereço! Um membro da equipe já está a caminho com o conteudo [condigo_slot]. 📦🕹️
   - text: Confirmamos o endereço! Agora é só aguardar que logo alguém chegará aí. 🏠🎮
 
   utter_cobranca:
