@@ -46,9 +46,9 @@ responses:
   - text: Bem-vindo(a) à nossa loja de games! Fique à vontade para explorar as novidades. 👾
 
   utter_descricao_jogos:
-  - text: Excelente escolha! [nome_jogo_slot] é incrível — agora só precisamos do seu endereço para seguir com a entrega. 🚀📦
+  - text: Excelente escolha! {nome_jogo_slot} é incrível — agora só precisamos do seu endereço para seguir com a entrega. 🚀📦
   - text: Ótima pedida! Vamos finalizar sua compra — nos envie o endereço pra garantir essa aventura. 🛒🏠
-  - text: Show! [nome_jogo_slot] já está quase com voce. Mande o endereço e a entrega será épica! 🎯🚚
+  - text: Show! {nome_jogo_slot} já está quase com voce. Mande o endereço e a entrega será épica! 🎯🚚
 
   utter_comprar:
   - text: Que bom saber que vai garantir um jogo! Me diz qual jogo tem em mente. 🎮🧐
@@ -61,8 +61,8 @@ responses:
   - text: Show de bola! Me fala o jogo que você quer alugar e eu arrumo pra você. 🎯📚
 
   utter_enderecamento:
-  - text: Endereço recebido com sucesso! Já estamos enviando alguém até aí com o pacote [codigo_slot]. 🚚✅
-  - text: Tudo certo com o endereço! Um membro da equipe já está a caminho com o conteudo [condigo_slot]. 📦🕹️
+  - text: Endereço recebido com sucesso! Já estamos enviando alguém até aí com o pacote {codigo_slot}. 🚚✅
+  - text: Tudo certo com o endereço! Um membro da equipe já está a caminho com o conteudo {condigo_slot}. 📦🕹️
   - text: Confirmamos o endereço! Agora é só aguardar que logo alguém chegará aí. 🏠🎮
 
   utter_cobranca:
