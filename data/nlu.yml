@@ -80,76 +80,76 @@ nlu:
     - Quero [Elden Ring](nome_jogo)
     - Me vê Cyberpunk 2077
     - Quero The Witcher 3
-    - Desejo Minecraft
-    - Quero GTA V
+    - Manda um Minecraft
+    - Me entrega um GTA V
     - Estou interessado em Hollow Knight
-    - Quero Stardew Valley
+    - Talvez o Stardew Valley
     - Desejo Red Dead Redemption 2
     - Quero Overwatch 2
     - Me veja DOOM Eternal
-    - Quero Valheim
+    - Tô afim de um Valheim
     - Estou pensando em Final Fantasy VII Remake
-    - Quero Counter-Strike 2 (CS2)
+    - Bora com Counter-Strike 2 (CS2)
     - Desejo Persona 5 Royal
-    - Quero God of War Ragnarok
+    - Desejo um God of War Ragnarok
 
 - intent: comprar
   examples: |
-    - Quero adquirir um jogo
+    - Quero um jogo
     - Gostaria de comprar um jogo
     - Quero adquirir um novo game
     - Posso obter um jogo?
     - Desejo comprar um game
     - Me envie um game, por favor
     - Estou interessado em adquirir um jogo
-    - Quero comprar algo para me divertir
-    - Gostaria de obter um game
+    - Me veja um jogo, por favor
+    - Adoraria de obter um game
     - Desejo obter um jogo para mim
     - Posso solicitar um jogo?
-    - Quero adquirir um videogame
-    - Me veja um game, por favor
+    - Adquirir um videogame
+    - Me vê um game, por favor
     - Estou pensando em comprar um jogo
-    - Quero adquirir algo divertido para jogar
+    - Eu quero adquirir algo divertido para jogar
 
 - intent: alugar
   examples: |
     - Quero locar um jogo
     - Posso pegar um game por alguns dias?
     - Gostaria de arrendar algo para jogar
-    - Quero emprestar um jogo
+    - Pode me emprestar um jogo
     - É possível locar um videogame?
-    - Quero alugar um game por um tempo
+    - Alugar um game por um tempo
     - Estou interessado em pegar um game
-    - Posso arrendar um jogo para experimentar?
+    - Poderia arrendar um jogo para experimentar?
     - Gostaria de pegar algo divertido para jogar
     - Quero locar um jogo para o fim de semana
     - Preciso pegar um game por alguns dias
-    - Quero arrendar um jogo por um mês
+    - Me vê um jogo por um mês
     - Posso pegar um jogo para testar?
-    - Gostaria de locar um jogo para mim
-    - Quero emprestar algo para me divertir
+    - Adoraria de locar um jogo para mim
+    - Quero algo emprestado para me divertir
 
 - intent: enderecamento
   examples: |
     - O local é [Rua das Flores, 123](endereco)
-    - Estou localizado na [Avenida Paulista, 1000](endereco)
-    - Pode enviar para [Rua do Sol, 45](endereco)
-    - Meu local é [Praça da Liberdade, 10](endereco)
-    - Envie para o endereço [Rua das Palmeiras, 678](endereco)
-    - O endereço é [Avenida Brasil, 200](endereco)
+    - Tô na [Avenida Paulista 1000](endereco)
+    - Pode enviar para [Rua do Sol, 1](endereco)
+    - Vou pegar na [Praça da Liberdade, 10](endereco)
+    - Manda para [Rua das Palmeiras 678](endereco)
+    - To na [Avenida Brasil, 200](endereco)
     - Estou em [Rua do Comércio, 89](endereco)
-    - O pedido deve ser entregue em [Rua das Acácias, 321](endereco)
-    - Entregue no endereço [Avenida Central, 456](endereco)
-    - O local de entrega é [Rua Nova, 77](endereco)
-    - Pode mandar para [Rua das Orquídeas, 12](endereco)
-    - Estou na localização [Avenida Atlântica, 999](endereco)
-    - O destino é [Rua do Porto, 50](endereco)
-    - A entrega deve ser feita no local [Praça do Mercado, 5](endereco)
-    - O endereço de envio é [Rua das Laranjeiras, 88](endereco)
+    - O pedido deve ser entregue em [Rua das Acácias 321](endereco)
+    - Entregue no endereço [Avenida Central 456](endereco)
+    - É na [Jardim Nova, 616](endereco)
+    - Pode ser na [Rua das Orquídeas, 12](endereco)
+    - Envia para a [Avenida Atlântica 999](endereco)
+    - É [Rua do Porto, 150](endereco)
+    - [Praça do Mercado, 5](endereco)
+    - O endereço de envio é [Rua das Laranjeiras, 23](endereco)
 
 - intent: cobranca
   examples: |
-    - Oi, queria saber como está a entrega do meu jogo.
+    - Queria saber como está a entrega do meu jogo.
     - Já saiu pra entrega ou ainda tá parado aí?
     - E aí, vai chegar quando isso?
     - Meu jogo já foi enviado ou tão enrolando?
@@ -160,115 +160,115 @@ nlu:
     - Vai chegar algum dia ou não?
     - Isso já devia ter chegado, né?
     - Meu pedido sumiu ou vocês esqueceram?
-    - Já deu o prazo e nada ainda, isso é normal?
-    - Consegue me dizer onde está meu pedido?
+    - Kd meu jogo?
+    - Consegue me dizer onde está minha entrega?
     - Até agora nada da entrega, aconteceu algo?
     - Quero uma resposta. Quando vai chegar esse jogo?
 
 - intent: status
   examples: |
     - Meu código de pedido é [123456](codigo)
-    - O número do meu pedido é 654321
-    - Pode consultar o status do pedido 987654?
-    - Quero saber a situação do pedido com o código 456789
+    - O número é 654321
+    - 987654
+    - Quero saber a situação do 456789
     - O identificador do meu pedido é 112233
-    - Meu pedido está registrado com o número 334455
-    - Verifique o status do pedido com o número 778899, por favor
-    - O identificador do meu pedido é 998877, pode verificar?
+    - Está registrado com o número 334455
+    - Número é 778899, por favor
+    - O identificador é 998877
     - Estou aguardando o pedido com o número 223344
-    - A situação do pedido 667788 está disponível?
+    - É a droga do 667788
     - Meu pedido foi registrado com o número 445566
-    - Pode me informar sobre o pedido 556677?
-    - Quero saber a situação do pedido com o número 889900
-    - O número do meu pedido é 101112, qual a situação?
+    - Código 556677
+    - Pelo amor! O numero é 889900
+    - O número do pedido é 101112
     - Consulte o status do pedido 121314, por gentileza
 
 - intent: devolucao
   examples: |
     - Quero retornar um jogo
-    - Preciso retornar o game que comprei
-    - Como faço para devolver um jogo?
-    - Desejo realizar a devolução de um game
+    - Retornar
+    - Devolver um jogo
+    - Desejo realizar a devolução
     - Posso retornar o jogo que recebi?
     - Quero devolver porque não gostei do game
-    - O jogo veio com defeito, quero retornar
-    - Preciso retornar o game porque está com problema
-    - Quero devolver e trocar o game por outro
+    - Quero devolver
+    - Preciso da devolução do game até amanhã
+    - Quero mandar de volta
     - Como funciona o retorno de um jogo?
-    - Quero retornar o game e receber meu dinheiro de volta
+    - Vem pegar essa bosta
     - Desejo devolver o jogo que chegou ontem
-    - Posso retornar o game na loja?
-    - Quero retornar o game porque não atendeu minhas expectativas
-    - Preciso devolver o jogo o mais rápido possível
+    - Pode devolver?
+    - Quero enviar de volta o game
+    - Preciso que pegue isso o mais rápido possível
 
 - intent: motivo
   examples: |
     - Quero retornar porque o jogo veio com defeito
-    - O jogo não funciona, quero retornar
-    - Recebi o jogo errado, preciso devolver
-    - O jogo está danificado, quero devolver
-    - Não gostei do jogo, quero retornar
-    - O jogo não atende minhas expectativas
+    - Não funciona
+    - Recebi o jogo errado
+    - Essa procaria está danificado
+    - Travou na fase 2
+    - Mandaram errado
     - O produto veio incompleto, quero retornar
     - O jogo está com problemas técnicos
     - Não era o que eu esperava, quero retornar
-    - O jogo está quebrado, preciso retornar
-    - Recebi um jogo diferente do que pedi
-    - O jogo está com defeito na mídia
-    - Não consigo jogar, o jogo está com problema
+    - Parou
+    - Diferente do que pedi
+    - Ta todo cagado
+    - Tá com problema
     - O produto veio com a embalagem danificada
-    - Quero retornar porque o jogo não é compatível com meu console
+    - Plataforma não compatível
 
 - intent: reembolso
   examples: |
-    - Quero solicitar um reembolso
-    - Preciso de um reembolso
-    - Como faço para pedir um reembolso?
-    - Desejo receber meu dinheiro de volta
-    - Posso solicitar um reembolso?
-    - Quero saber como pedir um reembolso
-    - Preciso que meu dinheiro seja devolvido
-    - Quero pedir um reembolso
-    - Como funciona o processo de reembolso?
-    - Desejo solicitar a devolução do valor pago
-    - Quero meu dinheiro de volta
-    - Posso pedir um reembolso agora?
+    - Quero um reembolso
+    - Preciso de reembolso
+    - Reembolso
+    - Desejo o dinheiro de volta
+    - Me vê um reembolso?
+    - Meu dinheiro!
+    - Me reembolse agora ou abrirei processo
+    - Mande a bufunfa
+    - Vocês devem me reembolsar
+    - Quero receber de volta
+    - Meu dinheiro pra ontem
+    - Manda minha grana de volta
     - Preciso de informações sobre como solicitar um reembolso
-    - Quero entender como funciona o reembolso
-    - Estou interessado em pedir um reembolso
+    - Devolva meu dinheiro imediatamente
+    - Estou interessado em reembolso
 
 - intent: troca
   examples: |
-    - Quero substituir o jogo por outro
-    - Posso trocar este jogo por um diferente?
-    - Desejo realizar a substituição do jogo
-    - Quero trocar o jogo que adquiri
-    - Como faço para substituir o jogo por outro?
-    - Preciso substituir o jogo por um novo
-    - Quero trocar o jogo que recebi
+    - Trocar
+    - Trocar este jogo por um diferente
+    - Desejo a substituição do jogo
+    - Quero um menos chato
+    - Mudar seria bão
+    - Outro
+    - Manda outro
     - Posso substituir o jogo por outro modelo?
     - Desejo trocar o jogo por algo diferente
-    - Quero realizar a substituição do jogo
+    - Me vê outro
     - Preciso trocar o jogo que está comigo
-    - Quero saber como substituir o jogo por outro
+    - Quero substituir essa bomba
     - Posso solicitar a substituição do jogo?
-    - Quero trocar o jogo por algo melhor
-    - Desejo substituir o jogo por outro disponível
+    - Troca cairia bem
+    - Tem outro disponível?
 
 - intent: despedida
   examples: |
     - Tchau
-    - Até mais
-    - Até logo
+    - Té
+    - Flw
     - Até breve
     - Falou
     - Valeu, até a próxima
     - Até a próxima
     - Fui
     - Adeus
-    - Até mais tarde
-    - Nos vemos em breve
-    - Até amanhã
-    - Foi um prazer, até logo
+    - Fica na paz
+    - Vou embora
+    - Fica com os anjos 
+    - Foi um prazer
     - Obrigado, até mais
-    - Até qualquer hora
+    - Nunca mais volto aqui

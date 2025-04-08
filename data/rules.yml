@@ -11,7 +11,3 @@ rules:
   steps:
   - intent: devolucao
   - action: utter_devolucao
-  - intent: motivo
-  - action: utter_motivo
-  
-

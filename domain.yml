@@ -2,12 +2,13 @@ version: '3.1'
 
 intents:
 - saudacao
-- descriccao_jogo
+- descricao_jogo
 - comprar
 - alugar
 - enderecamento
 - status
 - devolucao
+- cobranca
 - motivo
 - reembolso
 - troca
@@ -39,13 +40,12 @@ slots:
       entity: endereco
 
 responses:
-
   utter_saudacao:
   - text: Olá! O que vai querer hoje? 🎮
   - text: E aí, gamer! Como posso te ajudar hoje na nossa loja? 🕹️
   - text: Bem-vindo(a) à nossa loja de games! Fique à vontade para explorar as novidades. 👾
 
-  utter_descricao_jogos:
+  utter_descricao_jogo:
   - text: Excelente escolha! {nome_jogo_slot} é incrível — agora só precisamos do seu endereço para seguir com a entrega. 🚀📦
   - text: Ótima pedida! Vamos finalizar sua compra — nos envie o endereço pra garantir essa aventura. 🛒🏠
   - text: Show! {nome_jogo_slot} já está quase com voce. Mande o endereço e a entrega será épica! 🎯🚚

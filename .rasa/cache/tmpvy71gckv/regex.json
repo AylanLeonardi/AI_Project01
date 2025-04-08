@@ -1,0 +1,10 @@
+[
+  {
+    "name": "codigo",
+    "pattern": "\\d{6}"
+  },
+  {
+    "name": "nome_jogo",
+    "pattern": "(\\bBreath\\ of\\ the\\ Wild\\b|\\bRed\\ Dead\\ Redemption\\ 2\\b|\\bModern\\ Warfare\\ II\\b|\\bCounter\\-Strike\\ 2\\ \\(CS2\\)\\b|\\bDOOM\\ Eternal\\b|\\bOverwatch\\ 2\\b|\\bRainbow\\ Six\\ Siege\\b|\\bAssassin’s\\ Creed\\ Valhalla\\b|\\bGod\\ of\\ War\\ Ragnarok\\b|\\bGhost\\ of\\ Tsushima\\b|\\bThe\\ Witcher\\ 3\\b|\\bElden\\ Ring\\b|\\bCyberpunk\\ 2077\\b|\\bFinal\\ Fantasy\\ VII\\ Remake\\b|\\bPersona\\ 5\\ Royal\\b|\\bWorld\\ of\\ Warcraft\\b|\\bFinal\\ Fantasy\\ XIV\\b|\\bBlack\\ Desert\\ Online\\b|\\bLost\\ Ark\\b|\\bElder\\ Scrolls\\ Online\\b|\\bForza\\ Horizon\\ 5\\b|\\bGran\\ Turismo\\ 7\\b|\\bF1\\ 23\\b|\\bNeed\\ for\\ Speed\\ Unbound\\b|\\bMario\\ Kart\\ 8\\ Deluxe\\b|\\bEA\\ Sports\\ FC\\ 24\\b|\\bNBA\\ 2K24\\b|\\beFootball\\ 2024\\b|\\bMadden\\ NFL\\ 24\\b|\\bTony\\ Hawk's\\ Pro\\ Skater\\ 1\\+2\\b|\\bMinecraft\\b|\\bGTA\\ V\\b|\\bTerraria\\b|\\bARK\\ Survival\\ Evolved\\b|\\bValheim\\b|\\bResident\\ Evil\\ Village\\b|\\bDead\\ Space\\ Remake\\b|\\bPhasmophobia\\b|\\bOutlast\\b|\\bAge\\ of\\ Empires\\ IV\\b|\\bXCOM\\ 2\\b|\\bWarhammer\\ III\\b|\\bStarCraft\\ II\\b|\\bHades\\b|\\bStardew\\ Valley\\b|\\bCeleste\\b|\\bHollow\\ Knight\\b|\\bUndertale\\b)"
+  }
+]

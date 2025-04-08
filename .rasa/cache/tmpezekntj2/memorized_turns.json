@@ -1,0 +1,31 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidU5qeWFRbGwsABZgb6g==": "utter_alugar",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidU5qeWFRLwJDSkpLUonioWpxmxAIA5A41xg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidU5qeWFRLwJDSkpLUonioWjLNIOCQlNTi5KLM5MT8+Kz89Pza2lgAfV1TPg==": "utter_descricao_jogo",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidU5qeWFRLwJDSkpLUonioWjLNIOCQlNTi5KLM5MT8+Kz89HziHISmh6CZsQAdcnOY": "action_listen",
+    "eJyljkEKgDAMBL/SB/gCvyJSSrtIRVNJUy/FvxvQk5eK3rJkdtihHp2pG2O3zktM1Jt6HZbcit7cYYlZQMqWDFYmkkbR91Imx0dDUkTA9mY/OhpDArLn6F2yc5rSu0GPzk9nYyAogOEVJVHXeAK/ApCv": "utter_enderecamento",
+    "eJyljkEKgDAMBL/SB/gCvyJSSl2koqmkqZfi3w3oRS8VvWXJ7LBd2RtTVsZmnZcQqTXlPCy5Ba25whySgJTNCaxMII2i7zmPjveKJIuA7cV+dFSGDEieg3fRTnGM7wY9Oj+dlYGgAQyvKMnLffdKzdgfJ8uwRw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbUsP6c0OTG/tjYWAFvaHTA=": "utter_devolucao",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbUsP6c0OTG/loA5pSUlqUXxCOX4TIoFAOhpOZg=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbUsP6c0OTG/loA5pSUlqUXxCOXkm0TARbn5JZllQENiAfzTU/M=": "utter_motivo",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJbUsP6c0OTG/loA5pSUlqUXxCOXkm0TARbn5JZllRDoHqhanGbEAw5luEw==": "action_listen",
+    "eJydjkEKwCAMBL/iA/oCv1KKWJtDQE3R6EX8ewMVerR424VhmL31TbU7QTXWMVLUqr3DRBtAq3E8ZoYobMmQhMEol7W6oJIvzlKfeAozJPPh66ZJUSDG+jNnsIuOSUgCCCf5LJ7jAZieiZg=": "utter_reembolso",
+    "eJydjsEJwCAQBFuxgFRgKyGIMfcQ1Avn6UfsPUKE/KL424VhmL3UTZSbICtt2GKQorxDBe1Bin6cjQyhsSkCNcaGdlmKCzK6ZDTWgScxA6kPXzcNijyyzZM5nV10DEIIwJ/o4mTLh/+Zjgd9w6YM": "action_listen",
+    "eJydjkEKxCAQBL/iA/ICv7IEcU0fBB3DOHqR/H0HNpCjwVs3FEV9xrWZcTK680FiIWvGfzjyGdbcJ8UqIGVbBSsTSa9Yc6CX1IIv18TTRMDuwddNk6JcJPaXOTe76JiEMJC/JdWXLQ++bpoUgQ4wgqIk6tp/GrPDIw==": "utter_enderecamento",
+    "eJydjkEKAyEMRa/iAXoCr1KKWOcvBI0lRjcyd6/QgaGriLt8eHm85zgfZnwY3fkgsZA143c48hnWXCPFKqDJtgqeTKQ5xZoDvaQWfDkVTxMBuxvfNylFuUjsizkXu+lQQhjI75LqYsuN75uUItABRpgoyWLV/4tmfH0BrYXiuw==": "action_listen",
+    "eJydjkEKwCAMBL/iA/oCv1KKBJtDQE3R6EXy9woVerT0tgvDMHvXzfQrY3PghThZ05/hEkS0Zp5ARTANthbMg6E0rlhzYuNQPbAuPFUEs3vx/6ZFUWSh9jFnsj8dixDJ7EH1uAF1VYfp": "utter_troca",
+    "eJydjsEJwCAQBFu5AlKBrYQgYu4hqBf09CP2HkEhr6D424VhmLPUA8oTMEul2ZAXUPqQXjkUMI41kdE3NkUMjTG+XRZwYyabtKI68SRmDPLD902TIkds8mLOYDcdkxAOpNVaR0f/DNcLwpeg/w==": "action_listen",
+    "eJydkVEKgCAMhq/iATqBV4kQsRGLcjGnL9LdGxT0qPi2Hz5+vm1zvSdTL4bifBCkaE19Bxf9CdZ84cAkEJXNCVgZjBrFmhUKHTl4uhs9WQTY/fh4U8PoJMHSqfOxgx0NEWEKvs/jRccamg9KgVHP6nbadKXlAZ3rvnc=": "utter_descricao_jogo",
+    "eJydkUEKxSAMBa/iAXoCr1KKiD+UlNZ8YnQjvXuFFkpXEXd5MBkeyVzPydQ/Q3E+CFK0pt6Di/4Aa56wYxKIjc0JuDEYWxRrflBoz8HTqXiyCLB78XGT0uggwdJZ52EHHUoRYQq+r8eNjhnUB6XA2M7qNlq7v/TZUZ3LBW7B3tE=": "action_listen",
+    "eJylkVEKwyAMQK/iAXoCrzKKiA3D0SYjRn+kd1+ghbGviPsz8PJ4mEc/F9ffDC3EJJnQu349AsYDvLuHPRcBVLYWYGUy6ijebdBorynSaXiqCHD44vMmo+ggyW0w52YnHUaIMKU41nGhcwbzQCVx1m8NL3oOX+ln50+nEQi4AUNSFEVd6wfnHfvo": "utter_enderecamento",
+    "eJylkVEKwyAMQK/iAXYCrzKGiA3D0SYjRn+kd1+ghdGviP0z8PJ4mGffH65/GVqISTKhd/14BIwbeHcOay4CqGwtwMpk1FG8W6DRWlOk3fBUEeDwx+dNRtFGkttgzslOOowQYUpxrONA5wzmgUrirN8aPvQevtJl56bTCARcgCEpijLYd12xjK8fqiYbjw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT+3oCixqLY2FgAiMhxi": "utter_comprar",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT+3oCixqJaAKaUlJalF8TDFuE2JBQCRZjcu": "action_listen",
+    "eJydjkEKgDAMBL/SB/iCfkWkhBikYpOSpl5K/25BPQvedmAYdm59ci0rnQHQorB37R6BIZF3DxyxGPFwayEdTuSB5h1KygraPyrVjDS88t/Kx5eVCmpEkLDLJr0vF5b9VKY=": "utter_descricao_jogo",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOT+3oCixqJaAKaUlJalF8TDF5JpCwC0pqcXJRZnJifnxWfnp+cQ5CU0PQTNjAa0ydQA=": "action_listen",
+    "eJyljkEKwzAMBL/iB/QF/koJxihLcEmkICu9mPy9gqaXXhySmxZGwzzb/ghtVbxTJivCMbTvkTgviOEYc6kGdnarUGcK+7QYSJZVs+4dy2YGTT/4qqXTMqKSFsqSXjLJuaS/n5vOTiB4hIIcZXPX8AG5sZIX": "utter_enderecamento",
+    "eJyljkEKwzAMBL/iB/QF/koIxihLcGikICu5mPy9hrSH5mLT3iSYHWYo58OVTXGESJaEvSvXETiu8O79PFM2cGX3DK1M4vqadyTrplHPhmU3g4YP/Kul0TIhkyaKEhaZpS/ptvnT2QgET1BQRdk6+74nLeP4ApXKsa8=": "action_listen"
+  }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-codigo",
+      "2": "I-codigo",
+      "3": "L-codigo",
+      "4": "U-codigo",
+      "5": "B-endereco",
+      "6": "I-endereco",
+      "7": "L-endereco",
+      "8": "U-endereco",
+      "9": "B-nome_jogo",
+      "10": "I-nome_jogo",
+      "11": "L-nome_jogo",
+      "12": "U-nome_jogo",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-codigo": 1,
+      "I-codigo": 2,
+      "L-codigo": 3,
+      "U-codigo": 4,
+      "B-endereco": 5,
+      "I-endereco": 6,
+      "L-endereco": 7,
+      "U-endereco": 8,
+      "B-nome_jogo": 9,
+      "I-nome_jogo": 10,
+      "L-nome_jogo": 11,
+      "U-nome_jogo": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

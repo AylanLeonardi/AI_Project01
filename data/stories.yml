@@ -4,6 +4,8 @@ stories:
 
 - story: Compra de Jogo
   steps:
+  - intent: saudacao
+  - action: utter_saudacao
   - intent: comprar
   - action: utter_comprar
   - intent: descricao_jogo
@@ -13,8 +15,23 @@ stories:
 
 - story: Alugar Jogo
   steps:
+  - intent: saudacao
+  - action: utter_saudacao
   - intent: alugar
   - action: utter_alugar
+  - intent: descricao_jogo
+  - action: utter_descricao_jogo
+  - intent: enderecamento
+  - action: utter_enderecamento
+
+- story: Troca do Jogo
+  steps:
+  - intent: devolucao
+  - action: utter_devolucao
+  - intent: motivo
+  - action: utter_motivo
+  - intent: troca
+  - action: utter_troca
   - intent: descricao_jogo
   - action: utter_descricao_jogo
   - intent: enderecamento
@@ -31,15 +48,3 @@ stories:
   - intent: enderecamento
   - action: utter_enderecamento
 
-- story: Troca do Jogo
-  steps:
-  - intent: devolucao
-  - action: utter_devolucao
-  - intent: motivo
-  - action: utter_motivo
-  - intent: troca
-  - action: utter_troca
-  - intent: descricao_jogo
-  - action: utter_descricao_jogo
-  - intent: enderecamento
-  - action: utter_enderecamento
