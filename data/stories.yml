@@ -48,3 +48,10 @@ stories:
   - intent: enderecamento
   - action: utter_enderecamento
 
+- story: Combrando o jogo
+  steps:
+    - intent: cobranca
+    - action: utter_cobranca
+    - intent: status
+    - action: utter_status
+
