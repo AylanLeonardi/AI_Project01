@@ -15,8 +15,6 @@ stories:
 
 - story: Alugar Jogo
   steps:
-  - intent: saudacao
-  - action: utter_saudacao
   - intent: alugar
   - action: utter_alugar
   - intent: descricao_jogo
