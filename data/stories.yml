@@ -23,6 +23,8 @@ stories:
   - action: utter_descricao_jogo
   - intent: enderecamento
   - action: utter_enderecamento
+  - intent: despedida
+  - action: utter_despedida
 
 - story: Troca do Jogo
   steps:
