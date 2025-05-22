@@ -38,29 +38,33 @@ slots:
     mappings:
     - type: from_entity
       entity: endereco
+forms:
+  dados_pedido_forms:
+    - nome_jogo_slot
+    - endereco_slot
 
 responses:
   utter_saudacao:
   - text: Olá! O que vai querer hoje? 🎮
   - text: E aí, gamer! Como posso te ajudar hoje na nossa loja? 🕹️
   - text: Bem-vindo(a) à nossa loja de games! Fique à vontade para explorar as novidades. 👾
-
+  
   utter_descricao_jogo:
   - text: Excelente escolha! {nome_jogo_slot} é incrível — agora só precisamos do seu endereço para seguir com a entrega. 🚀📦
   - text: Ótima pedida! Vamos finalizar sua compra — nos envie o endereço pra garantir essa aventura. 🛒🏠
   - text: Show! {nome_jogo_slot} já está quase com voce. Mande o endereço e a entrega será épica! 🎯🚚
 
-  utter_comprar:
+  utter_ask_dados_comprar_forms_entrega_jogos:
   - text: Que bom saber que vai garantir um jogo! Me diz qual jogo tem em mente. 🎮🧐
-  - text: Show! A gente tem várias opções incríveis — quel deseja? 👾📚
-  - text: Mandou bem! Me fala o jogo que você gosta e vamos achar pra você. 🎯✨
+  - text: Show! A gente tem várias opções incríveis — qual deseja? 👾📚
+  - text: Muito bem! Me fala o jogo que você gosta e vamos achar pra você. 🎯✨
 
   utter_alugar:
   - text: Aluguel é uma ótima opção! Quer me contar o game que tá procurando? 🎮📦
   - text: Legal! Temos vários títulos disponíveis pra aluguel — qual o nome do game que deseja? 🕹️📋
   - text: Show de bola! Me fala o jogo que você quer alugar e eu arrumo pra você. 🎯📚
 
-  utter_enderecamento:
+  utter_ask_dados_endereco_forms_entrega_jogos:
   - text: Endereço recebido com sucesso! Já estamos enviando alguém até aí. 🚚✅
   - text: Tudo certo com o endereço! Um membro da equipe já está a caminho. 📦🕹️
   - text: Confirmamos o endereço! Agora é só aguardar que logo alguém chegará aí. 🏠🎮
@@ -99,6 +103,9 @@ responses:
   - text: Obrigado por escolher nossa loja! Até a próxima e boas jogatinas! 🎮👋
   - text: Foi um prazer te atender! Qualquer coisa, estamos por aqui. Até mais! 🕹️😊
   - text: Valeu pela visita! Esperamos te ver de novo em breve. Bom jogo! 🚀🎉
+actions:
+  - action_resetar_slots
+  - action_descricao_entrega
 
 session_config:
   session_expiration_time: 60
