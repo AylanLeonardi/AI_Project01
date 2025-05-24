@@ -63,3 +63,8 @@ stories:
     - intent: status
     - action: utter_status
 
+  - story: Despedida
+    steps:
+      - intent: despedida
+      - action: utter_despedida
+
