@@ -11,6 +11,7 @@ stories:
 
 - story: Alugar Jogo
   steps:
+  - action: utter_saudacao
   - intent: alugar
   - checkpoint: fim_saudacao
 
@@ -37,27 +38,19 @@ stories:
   - action: action_resetar_slots
   - checkpoint: fim_saudacao  
   
-- story: Troca do Jogo
+- story: Devolucao do Jogo
   steps:
   - intent: devolucao
   - action: utter_devolucao
+  - checkpoint: inicio_devolucao
+
+- story: Especificando a devolucao
   - intent: motivo
   - action: utter_motivo
-  - intent: troca
-  - action: utter_troca
+  - intent: metodo
+  - action: utter_metodo
   - intent: descricao_jogo
   - action: utter_descricao_jogo
-  - intent: enderecamento
-  - action: utter_enderecamento
-
-- story: Reembolsamento do Jogo
-  steps:
-  - intent: devolucao
-  - action: utter_devolucao
-  - intent: motivo
-  - action: utter_motivo
-  - intent: reembolso
-  - action: utter_reembolso
   - intent: enderecamento
   - action: utter_enderecamento
 
