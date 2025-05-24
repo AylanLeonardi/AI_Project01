@@ -20,10 +20,7 @@ stories:
   - checkpoint: fim_saudacao
   - action: dados_pedido_forms
   - active_loop: dados_pedido_forms
-  - intent: descricao_jogo
-  - action: utter_descricao_jogo
-  - intent: enderecamento
-  - action: utter_enderecamento
+  - action: action_dados_entrega
   - checkpoint: fim_dados_pedido
 
 - story: Confirmação do Pedido
@@ -62,9 +59,5 @@ stories:
     - action: utter_cobranca
     - intent: status
     - action: utter_status
-
-  - story: Despedida
-    steps:
-      - intent: despedida
-      - action: utter_despedida
-
+    - intent: despedida
+    - action: utter_despedida 
