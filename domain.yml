@@ -54,7 +54,7 @@ responses:
   - text: Ótima pedida! Vamos finalizar sua compra — nos envie o endereço pra garantir essa aventura. 🛒🏠
   - text: Show! {nome_jogo_slot} já está quase com voce. Mande o endereço e a entrega será épica! 🎯🚚
 
-  utter_ask_dados_pedido_form_nome_jogos:
+  utter_ask_dados_pedido_forms_nome_jogo_slot:
   - text: Que bom saber que vai garantir um jogo! Me diz qual jogo tem em mente. 🎮🧐
   - text: Show! A gente tem várias opções incríveis — qual deseja? 👾📚
   - text: Muito bem! Me fala o jogo que você gosta e vamos achar pra você. 🎯✨
@@ -64,7 +64,7 @@ responses:
   - text: Legal! Temos vários títulos disponíveis pra aluguel — qual o nome do game que deseja? 🕹️📋
   - text: Show de bola! Me fala o jogo que você quer alugar e eu arrumo pra você. 🎯📚
 
-  utter_ask_dados_pedido_forms_endereco_jogos:
+  utter_ask_dados_pedido_forms_endereco_slot:
   - text: Endereço recebido com sucesso! Já estamos enviando alguém até aí. 🚚✅
   - text: Tudo certo com o endereço! Um membro da equipe já está a caminho. 📦🕹️
   - text: Confirmamos o endereço! Agora é só aguardar que logo alguém chegará aí. 🏠🎮
