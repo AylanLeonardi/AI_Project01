@@ -16,8 +16,9 @@ stories:
   - checkpoint: fim_saudacao
 
 - story: Especificando o jogo
-- checkpoint: fim_saudacao
-- action: dados_pedido_forms
+  steps:
+  - checkpoint: fim_saudacao
+  - action: dados_pedido_forms
   - active_loop: dados_pedido_forms
   - intent: descricao_jogo
   - action: utter_descricao_jogo
@@ -42,17 +43,18 @@ stories:
   steps:
   - intent: devolucao
   - action: utter_devolucao
-  - checkpoint: inicio_devolucao
-
-- story: Especificando a devolucao
   - intent: motivo
   - action: utter_motivo
-  - intent: metodo
-  - action: utter_metodo
-  - intent: descricao_jogo
-  - action: utter_descricao_jogo
-  - intent: enderecamento
-  - action: utter_enderecamento
+  - checkpoint: especificando_metodo_devolucao
+  - intent: reembolso
+  - action: utter_reembolso
+
+- story: Especificando a devolucao
+  steps:
+  - checkpoint: especificando_metodo_devolucao
+  - intent: troca
+  - action: utter_troca
+  - checkpoint: fim_saudacao
 
 - story: Combrando o jogo
   steps:
