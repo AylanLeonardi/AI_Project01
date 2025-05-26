@@ -44,13 +44,13 @@ class Action_Descricao_Entrega(Action):
         endereco = tracker.get_slot('endereco_slot')
         # Caso sejam detectados mais sabores do que qtdes:
         while(len(sabores)>len(num)):
-            qtdes.append('uma unidade de')
+            qtdes.append('uma')
         # Caso sejam detectados mais qtdes do que sabores:
         while(len(sabores)<len(num)):
             qtdes.pop(0)
         for n, nome in zip(num,jogo_nomes):
-            texto = texto + "\n - "+ str(n) + " pizza(s) de " + str(nome)
-        texto = texto + '\nAlém disso, o seu endereço é o: ' + str(endereco) + '. Favor confirmar com sim ou não.'
+            texto = texto + "\n - "+ str(n) + " unidade do " + str(nome)
+        texto = texto + '\nO endereço fornecido foi: ' + str(endereco) + '. Favor confirmar com sim ou não.'
         dispatcher.utter_message(text=texto)
         return []
 
