@@ -30,26 +30,26 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import AllSlotsReset
 
-class Action_Descricao_Pizzas(Action):
+class Action_Descricao_Entrega(Action):
     def name(self) -> Text:
-        return "action_descricao_pedido"
+        return "action_descricao_entrega"
     
     def run(self, 
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]):
-        texto = "Anotei tudo aqui, você deseja comprar as seguintes pizzas:"    
-        sabores = tracker.get_slot('pedido_pizza')
-        qtdes = tracker.get_slot('qtde_pizza')
-        endereco = tracker.get_slot('endereco_cliente')
+        texto = "Pedido recebido: Você deseja receber:"    
+        jogo_nomes = tracker.get_slot('nome_jogo_slot')
+        num = tracker.get_slot('qtd_unidades_slot')
+        endereco = tracker.get_slot('endereco_slot')
         # Caso sejam detectados mais sabores do que qtdes:
-        while(len(sabores)>len(qtdes)):
-            qtdes.append('uma')
+        while(len(sabores)>len(num)):
+            qtdes.append('uma unidade de')
         # Caso sejam detectados mais qtdes do que sabores:
-        while(len(sabores)<len(qtdes)):
+        while(len(sabores)<len(num)):
             qtdes.pop(0)
-        for qtd, sabor in zip(qtdes,sabores):
-            texto = texto + "\n - "+ str(qtd) + " pizza(s) de " + str(sabor)
+        for n, nome in zip(num,jogo_nomes):
+            texto = texto + "\n - "+ str(n) + " pizza(s) de " + str(nome)
         texto = texto + '\nAlém disso, o seu endereço é o: ' + str(endereco) + '. Favor confirmar com sim ou não.'
         dispatcher.utter_message(text=texto)
         return []
