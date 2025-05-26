@@ -18,6 +18,7 @@ entities:
 - codigo
 - nome_jogo
 - endereco
+- qtd_unidades
 
 slots:
   codigo_slot:
@@ -38,6 +39,12 @@ slots:
     mappings:
     - type: from_entity
       entity: endereco
+  qtd_unidades_slot:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+    entity: qtd_unidades
 forms:
   dados_pedido_forms:
     - nome_jogo_slot
