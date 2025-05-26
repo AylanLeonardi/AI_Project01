@@ -43,10 +43,10 @@ class Action_Descricao_Entrega(Action):
         num = tracker.get_slot('qtd_unidades_slot')
         endereco = tracker.get_slot('endereco_slot')
         # Caso sejam detectados mais sabores do que qtdes:
-        while(len(sabores)>len(num)):
+        while(len(jogo_nomes)>len(num)):
             qtdes.append('uma')
         # Caso sejam detectados mais qtdes do que sabores:
-        while(len(sabores)<len(num)):
+        while(len(jogo_nomes)<len(num)):
             qtdes.pop(0)
         for n, nome in zip(num,jogo_nomes):
             texto = texto + "\n - "+ str(n) + " unidade do " + str(nome)
