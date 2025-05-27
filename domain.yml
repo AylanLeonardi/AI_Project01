@@ -51,6 +51,7 @@ forms:
   dados_pedido_forms:
     - nome_jogo_slot
     - endereco_slot
+    - qtd_unidaddes_slot
 
 responses:
   utter_saudacao:
