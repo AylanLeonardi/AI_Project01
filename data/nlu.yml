@@ -132,21 +132,21 @@ nlu:
 
 - intent: endereco
   examples: |
-    - O local é Rua das Flores, 123
-    - Tô na Avenida Paulista 1000
-    - Pode enviar para Rua do Sol, 1
-    - Vou pegar na Praça da Liberdade, 10
-    - Manda para Rua das Palmeiras 678
-    - To na Avenida Brasil, 200
-    - Estou em Rua do Comércio, 89
-    - O pedido deve ser entregue em Rua das Acácias 321
-    - Entregue no endereço Avenida Central 456
-    - É na Jardim Nova, 616
-    - Pode ser na Rua das Orquídeas, 12
-    - Envia para a Avenida Atlântica 999
-    - É Rua do Porto, 150
-    - Praça do Mercado, 5
-    - O endereço de envio é Rua das Laranjeiras, 23
+    - O local é [Rua das Flores, 123](endereco)
+    - Tô na [Avenida Paulista 1000](endereco)
+    - Pode enviar para [Rua do Sol, 1](endereco)
+    - Vou pegar na [Praça da Liberdade, 10](endereco)
+    - Manda para [Rua das Palmeiras 678](endereco)
+    - To na [Avenida Brasil, 200](endereco)
+    - Estou em [Rua do Comércio, 89](endereco)
+    - O pedido deve ser entregue em [Rua das Acácias 321](endereco)
+    - Entregue no endereço [Avenida Central 456](endereco)
+    - É na [Jardim Nova, 616](endereco) que entrega
+    - Pode ser na [Rua das Orquídeas, 12](endereco)
+    - Envia para a [Avenida Atlântica 999](endereco)
+    - É [Rua do Porto, 150](endereco), por favor
+    - [Praça do Mercado, 5](endereco)
+    - O endereço de envio é [Rua das Laranjeiras, 23](endereco)
 
 - intent: cobranca
   examples: |
