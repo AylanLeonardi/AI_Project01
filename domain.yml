@@ -13,6 +13,8 @@ intents:
 - reembolso
 - troca
 - despedida
+- start
+- help
 
 entities:
 - codigo
@@ -105,6 +107,9 @@ responses:
   - text: Obrigado por escolher nossa loja! Até a próxima e boas jogatinas! 🎮👋
   - text: Foi um prazer te atender! Qualquer coisa, estamos por aqui. Até mais! 🕹️😊
   - text: Valeu pela visita! Esperamos te ver de novo em breve. Bom jogo! 🚀🎉
+  utter_help:
+  - text: Sou um bot responsavel por te auxiliar no compra, aluguel, reembolso ou troca de jogos
+
 actions:
   - action_resetar_slots
   - action_descricao_entrega
