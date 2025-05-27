@@ -78,21 +78,21 @@ nlu:
 
 - intent: descricao_jogo
   examples: |
-    - Quero [Elden Ring](nome_jogo)
-    - Me vê Cyberpunk 2077
-    - Quero The Witcher 3
-    - Manda um Minecraft
-    - Me entrega um GTA V
+    - Quero [um](qtd_unidades) [Elden Ring](nome_jogo)
+    - Me vê [duas](qtd_unidades) unidades de Cyberpunk 2077
+    - Quero [tres](qtd_unidades) The Witcher 3
+    - Manda [1](qtd_unidades) Minecraft
+    - Me entrega [quatro](qtd_unidades) unidade GTA V
     - Estou interessado em Hollow Knight
-    - Talvez o Stardew Valley
-    - Desejo Red Dead Redemption 2
-    - Quero Overwatch 2
-    - Me veja DOOM Eternal
-    - Tô afim de um Valheim
-    - Estou pensando em Final Fantasy VII Remake
-    - Bora com Counter-Strike 2 (CS2)
-    - Desejo Persona 5 Royal
-    - Desejo um God of War Ragnarok
+    - Talvez [quinze](qtd_unidades) Stardew Valley
+    - Desejo [cinco](qtd_unidades) Red Dead Redemption 2
+    - Quero [seis](qtd_unidades) Overwatch 2
+    - Me veja [sete](qtd_unidades) DOOM Eternal
+    - Tô afim de [2](qtd_unidades) Valheim
+    - Estou pensando em [oito](qtd_unidades) Final Fantasy VII Remake
+    - Bora com [nove](qtd_unidades) Counter-Strike 2 (CS2)
+    - Desejo [dez](qtd_unidades) Persona 5 Royal
+    - Desejo [12](qtd_unidades) God of War Ragnarok
 
 - intent: comprar
   examples: |
@@ -130,23 +130,23 @@ nlu:
     - Adoraria de locar um jogo para mim
     - Quero algo emprestado para me divertir
 
-- intent: enderecamento
+- intent: endereco
   examples: |
-    - O local é [Rua das Flores, 123](endereco)
-    - Tô na [Avenida Paulista 1000](endereco)
-    - Pode enviar para [Rua do Sol, 1](endereco)
-    - Vou pegar na [Praça da Liberdade, 10](endereco)
-    - Manda para [Rua das Palmeiras 678](endereco)
-    - To na [Avenida Brasil, 200](endereco)
-    - Estou em [Rua do Comércio, 89](endereco)
-    - O pedido deve ser entregue em [Rua das Acácias 321](endereco)
-    - Entregue no endereço [Avenida Central 456](endereco)
-    - É na [Jardim Nova, 616](endereco)
-    - Pode ser na [Rua das Orquídeas, 12](endereco)
-    - Envia para a [Avenida Atlântica 999](endereco)
-    - É [Rua do Porto, 150](endereco)
-    - [Praça do Mercado, 5](endereco)
-    - O endereço de envio é [Rua das Laranjeiras, 23](endereco)
+    - O local é Rua das Flores, 123
+    - Tô na Avenida Paulista 1000
+    - Pode enviar para Rua do Sol, 1
+    - Vou pegar na Praça da Liberdade, 10
+    - Manda para Rua das Palmeiras 678
+    - To na Avenida Brasil, 200
+    - Estou em Rua do Comércio, 89
+    - O pedido deve ser entregue em Rua das Acácias 321
+    - Entregue no endereço Avenida Central 456
+    - É na Jardim Nova, 616
+    - Pode ser na Rua das Orquídeas, 12
+    - Envia para a Avenida Atlântica 999
+    - É Rua do Porto, 150
+    - Praça do Mercado, 5
+    - O endereço de envio é Rua das Laranjeiras, 23
 
 - intent: cobranca
   examples: |
@@ -273,3 +273,49 @@ nlu:
     - Foi um prazer
     - Obrigado, até mais
     - Nunca mais volto aqui
+
+- intent: afirmacao
+  examples: |
+    - Sim
+    - Sim, claro
+    - Isso mesmo
+    - Com certeza
+    - Claro
+    - Exato
+    - Correto
+    - Sim, pode ser
+    - Certamente
+    - Sim, sem dúvidas
+    - Beleza
+    - Fechado
+    - Pode deixar
+    - Ok, combinado
+    - Sim, estou de acordo
+
+- intent: negacao
+  examples: |
+    - Não
+    - De jeito nenhum
+    - Nem pensar
+    - Não mesmo
+    - Jamais
+    - Nunca
+    - De forma alguma
+    - Nem a pau
+    - Não estou de acordo
+    - Não quero
+    - Nem um pouco
+    - Não faz sentido
+    - Não aceito
+    - Nop
+    - Nada disso
+
+- intent: start
+  examples: |
+  - /start
+  - start
+
+- intent: help
+  examples: |
+  - /help
+  - help
