@@ -32,7 +32,7 @@ from rasa_sdk.events import AllSlotsReset
 
 class Action_Descricao_Entrega(Action):
     def name(self) -> Text:
-        return "action_descricao_entrega"
+        return "action_dados_entrega"
     
     def run(self, 
             dispatcher: CollectingDispatcher,
