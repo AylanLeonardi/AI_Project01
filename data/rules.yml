@@ -11,3 +11,18 @@ rules:
   steps:
   - intent: devolucao
   - action: utter_devolucao
+
+- rule: Erro de Classificação da Intenção
+  steps:
+  - intent: nlu_fallback
+  - action: utter_reformular  
+
+- rule: Saudação Inicial
+  steps:
+  - intent: start
+  - action: utter_saudacao
+
+- rule: Descrição de Ajuda
+  steps:
+  - intent: help
+  - action: utter_help
