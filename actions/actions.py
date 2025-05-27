@@ -32,7 +32,7 @@ from rasa_sdk.events import AllSlotsReset
 
 class Action_Descricao_Entrega(Action):
     def name(self) -> Text:
-        return "action_dados_entrega"
+        return "action_descricao_entrega"
     
     def run(self, 
             dispatcher: CollectingDispatcher,
@@ -44,12 +44,15 @@ class Action_Descricao_Entrega(Action):
         endereco = tracker.get_slot('endereco_slot')
         # Caso sejam detectados mais sabores do que qtdes:
         while(len(jogo_nomes)>len(num)):
-            qtdes.append('uma')
+            num.append('uma')
         # Caso sejam detectados mais qtdes do que sabores:
         while(len(jogo_nomes)<len(num)):
             qtdes.pop(0)
         for n, nome in zip(num,jogo_nomes):
-            texto = texto + "\n - "+ str(n) + " unidade do " + str(nome)
+            if(n != "uma" and n != "1"):
+                texto = texto + "\n - "+ str(n) + " unidade(s) do " + str(nome)
+            else:
+                texto = texto + "\n - "+ str(n) + " unidade do " + str(nome)
         texto = texto + '\nO endereço fornecido foi: ' + str(endereco) + '. Favor confirmar com sim ou não.'
         dispatcher.utter_message(text=texto)
         return []
