@@ -49,7 +49,7 @@ stories:
   - action: utter_troca
   - checkpoint: fim_saudacao
 
-- story: Combrando o jogo
+- story: Cobrando o jogo
   steps:
     - intent: cobranca
     - action: utter_cobranca
