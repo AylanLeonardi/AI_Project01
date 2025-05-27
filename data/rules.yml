@@ -1,28 +1,59 @@
 version: "3.1"
 
-rules:
+stories:
 
-- rule: Despedida
+- story: Compra de Jogo
   steps:
-  - intent: despedida
-  - action: utter_despedida
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: comprar
+  - checkpoint: form_inicio
 
-- rule: Questionamento
+- story: Alugar Jogo
+  steps:
+  - action: utter_saudacao
+  - intent: alugar
+  - checkpoint: form_inicio
+  - action: dados_pedido_forms
+  - active_loop: dados_pedido_forms
+  - action: action_dados_entrega
+  - checkpoint: fim_dados_pedido
+
+- story: Confirmação do Pedido
+  steps:
+  - checkpoint: fim_dados_pedido
+  - intent: afirmacao
+  - action: utter_finalizacao_pedido
+
+- story: Pedido com erro
+  steps:
+  - checkpoint: fim_dados_pedido
+  - intent: negacao
+  - action: action_resetar_slots
+  - checkpoint: form_inicio  
+  
+- story: Devolucao do Jogo
   steps:
   - intent: devolucao
   - action: utter_devolucao
+  - intent: motivo
+  - action: utter_motivo
+  - checkpoint: especificando_metodo_devolucao
+  - intent: reembolso
+  - action: utter_reembolso
 
-- rule: Erro de Classificação da Intenção
+- story: Especificando a devolucao
   steps:
-  - intent: nlu_fallback
-  - action: utter_reformular  
+  - checkpoint: especificando_metodo_devolucao
+  - intent: troca
+  - action: utter_troca
+  - checkpoint: fim_saudacao
 
-- rule: Saudação Inicial
+- story: Combrando o jogo
   steps:
-  - intent: start
-  - action: utter_saudacao
-
-- rule: Descrição de Ajuda
-  steps:
-  - intent: help
-  - action: utter_help
+    - intent: cobranca
+    - action: utter_cobranca
+    - intent: status
+    - action: utter_status
+    - intent: despedida
+    - action: utter_despedida 
