@@ -30,7 +30,7 @@ slots:
     - type: from_entity
       entity: codigo
   nome_jogo_slot:
-    type: text
+    type: list
     influence_conversation: false
     mappings:
     - type: from_entity
@@ -42,7 +42,7 @@ slots:
     - type: from_entity
       entity: endereco
   qtd_unidades_slot:
-    type: text
+    type: list
     influence_conversation: false
     mappings:
     - type: from_entity
