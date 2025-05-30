@@ -75,7 +75,24 @@ class Action_Descricao_Entrega(Action):
 
         dispatcher.utter_message(text=texto)
         return []
+                
+class ActionGerarCodigo(Action):
+    def name(self) -> Text:
+        return "action_finalizacao_pedido"
 
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # Gerar código de 6 dígitos
+        codigo = "{:06d}".format(random.randint(0, 999999))
+
+        # Enviar o código ao usuário
+        dispatcher.utter_message(text=f"Seu código de verificação é: {codigo}")
+
+        return []
+                
 class Reset_Todos_Slots(Action):
     def name(self) -> Text:
         return "action_resetar_slots"
