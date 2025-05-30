@@ -89,7 +89,7 @@ class ActionGerarCodigo(Action):
         codigo = "{:06d}".format(random.randint(0, 999999))
 
         # Enviar o código ao usuário
-        dispatcher.utter_message(text=f"Seu código de verificação é: {codigo}")
+        dispatcher.utter_message(text=f"Seu código de registro é: {codigo}")
 
         return []
                 
